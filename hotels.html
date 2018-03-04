@@ -26,82 +26,88 @@
 
     <section class="inns-search">
       <h2 class="visually-hidden">Интерфейс выбора гостиницы</h2>
-      <!--Здесь все формы-->
+      <!--Здесь форма-->
     </section>
 
     <section class="inns">
       <h2 class="visually-hidden">Подходящие гостиницы</h2>
       <div class="inns-sort">
-        <p>НАЙДЕНО:<output name="founded">3</output></p>
-        <p>СОРТИРОВКА:</p>
+        <p>Найдено:<span>3</span></p>
+        <p>Сортировка:</p>
         <ul class="inns-sort-buttons">
-          <li><button class="sort-price">ПО ЦЕНЕ</button></li>
-          <li><button class="sort-type">ПО ТИПУ</button></li>
-          <li><button class="sort-rating">ПО РЕЙТИНГУ</button></li>
-          <li>
-            <button class="sort-from-lowest"></button>
-            <button class="sort-from-highest"></button>
-          </li>
+          <li><a class="sort-method">По цене</a></li>
+          <li><a class="sort-method">По типу</a></li>
+          <li><a class="sort-method">По рейтингу</a></li>
         </ul>
+        <button class="sort-lowest">По возрастанию</button>
+        <button class="sort-highest">По убыванию</button>
       </div>
 
       <ul class="inns-list">
 
         <li class="inns-list-item">
-          <h3>AMARA RESORT & SPA</h3>
+          <h3>Amara resort & spa</h3>
           <div class="inn-image">
-            <img src="http://placehold.it/150x100" alt="AMARA RESORT & SPA">
+            <img src="http://placehold.it/150x100" alt="Amara resort & spa">
           </div>
-          <p class="inn-type">ГОСТИНИЦА</p>
-          <p class="inn-price">ОТ 4000Р.</p>
+          <p class="inn-type">Гостиница</p>
+          <p class="inn-price">от 4000р.</p>
           <div class="inn-buttons">
-            <a class="inn-info" href="#">ПОДРОБНЕЕ</a>
-            <button class="inn-booking">ЗАБРОНИРОВАТЬ</button>
+            <a class="inn-info" href="#">Подробнее</a>
+            <a class="inn-booking">Забронировать</a>
           </div>
           <div class="inn-rating">
             <div class="inn-stars">
-              <img src="http://placehold.it/150x100" alt="4 звезды">
+              <div class="star">*</div>
+              <div class="star">*</div>
+              <div class="star">*</div>
+              <div class="star">*</div>
             </div>
-            <p class="inn-rating-numbers">РЕЙТИНГ: 8,5</p>
+            <p class="inn-rating-numbers">Рейтинг: 8,5</p>
           </div>
         </li>
 
         <li class="inns-list-item">
-          <h3>DESERT QUAIL INN</h3>
+          <h3>Desert quail inn</h3>
           <div class="inn-image">
-            <img src="http://placehold.it/150x100" alt="DESERT QUAIL INN">
+            <img src="http://placehold.it/150x100" alt="Desert quail inn">
           </div>
-          <p class="inn-type">МОТЕЛЬ</p>
-          <p class="inn-price">ОТ 3000Р.</p>
+          <p class="inn-type">Мотель</p>
+          <p class="inn-price">ОТ 3000р.</p>
           <div class="inn-buttons">
-            <a class="inn-info" href="#">ПОДРОБНЕЕ</a>
-            <button class="inn-booking">ЗАБРОНИРОВАТЬ</button>
+            <a class="inn-info" href="#">Подробнее</a>
+            <a class="inn-booking">Забронировать</a>
           </div>
           <div class="inn-rating">
             <div class="inn-stars">
-              <img src="http://placehold.it/150x100" alt="3 звезды">
+              <div class="star">*</div>
+              <div class="star">*</div>
+              <div class="star">*</div>
+              <div class="star">*</div>
             </div>
-            <p class="inn-rating-numbers">РЕЙТИНГ: 8,9</p>
+            <p class="inn-rating-numbers">Рейтинг: 8,9</p>
           </div>
         </li>
 
         <li class="inns-list-item">
-          <h3>VILLAS AT POCO DIABLO</h3>
+          <h3>Villas at Poco diablo</h3>
           <div class="inn-image">
-            <img src="http://placehold.it/150x100" alt="VILLAS AT POCO DIABLO">
+            <img src="http://placehold.it/150x100" alt="Villas at Poco diablo">
           </div>
-          <p class="inn-type">ГОСТИНИЦА</p>
-          <p class="inn-price">ОТ 2000Р.</p>
+          <p class="inn-type">Гостиница</p>
+          <p class="inn-price">от 2000р.</p>
           <div class="inn-buttons">
-            <a class="inn-info" href="#">ПОДРОБНЕЕ</a>
-            <button class="inn-booking">ЗАБРОНИРОВАТЬ</button>
+            <a class="inn-info" href="#">Подробнее</a>
+            <button class="inn-booking">Забронировать</button>
           </div>
           <div class="inn-rating">
-            <div class="inn-stars">
-              <img src="http://placehold.it/150x100" alt="2 звезды">
-            </div>
-            <p class="inn-rating-numbers">РЕЙТИНГ: 9,2</p>
+            div class="inn-stars">
+            <div class="star">*</div>
+            <div class="star">*</div>
+            <div class="star">*</div>
+            <div class="star">*</div>
           </div>
+            <p class="inn-rating-numbers">Рейтинг: 9,2</p>
         </li>
 
       </ul>
@@ -112,20 +118,20 @@
 
   <footer class="main-footer">
 
-    <div class="hashtag">
+    <p class="hashtag">
       <a href="#"><b>#VISITSEDONA</b></a>
-    </div>
+    </p>
 
     <div class="footer-social">
-      <a class="social-button" href="#"><img src="http://placehold.it/150x100" alt="twitter"></a>
-      <a class="social-button" href="#"><img src="http://placehold.it/150x100" alt="facebook"></a>
-      <a class="social-button" href="#"><img src="http://placehold.it/150x100" alt="youtube"></a>
+      <a class="social-button" href="#">twitter</a>
+      <a class="social-button" href="#">facebook</a>
+      <a class="social-button" href="#">youtube</a>
     </div>
 
-    <div class="footer-copyright">
-      <span>WEBSITE BY</span>
+    <p class="footer-copyright">
+      <span>Website by</span>
       <a href="#"><img src="http://placehold.it/150x100" alt="Логотип &ldquohtmlacademy&rdquo"></a>
-    </div>
+    </p>
 
   </footer>
 
