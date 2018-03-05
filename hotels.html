@@ -26,7 +26,42 @@
 
     <section class="inns-search">
       <h2 class="visually-hidden">Интерфейс выбора гостиницы</h2>
-      <!--Здесь форма-->
+
+      <form class="filter-form" action="hotels.html" method="post">
+        <ul class="infrastructure">
+          <li>
+            <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
+          </li>
+          <li>
+            <label><input class="checkbox" type="checkbox" title="parking">Парковка</label>
+          </li>
+          <li>
+            <label><input class="checkbox" type="checkbox" title="wi-fi">Wi-Fi</label>
+          </li>
+        </ul>
+        <ul class="habitat-type">
+          <li>
+            <label><input class="checkbox" type="checkbox" title="inn">Гостиница</label>
+          </li>
+          <li>
+            <label><input class="checkbox" type="checkbox" title="motel">Мотель</label>
+          </li>
+          <li>
+            <label><input class="checkbox" type="checkbox" title="apartment">Апартаменты</label>
+          </li>
+        </ul>
+        <div class="price">
+          <p>Стоимость в сутки (р):</p>
+          <div class="slider">
+            <span>от</span>
+            <input class="from" value="от 0">
+            <span>до</span>
+            <input class="before" value="3000">
+          </div>
+          <button>Показать</button>
+        </div>
+
+      </form>
     </section>
 
     <section class="inns">
@@ -98,7 +133,7 @@
           <p class="inn-price">от 2000р.</p>
           <div class="inn-buttons">
             <a class="inn-info" href="#">Подробнее</a>
-            <button class="inn-booking">Забронировать</button>
+            <a class="inn-booking">Забронировать</a>
           </div>
           <div class="inn-rating">
             <div class="inn-stars">
@@ -131,7 +166,7 @@
 
     <p class="footer-copyright">
       <span>Website by</span>
-      <a href="#"><img src="http://placehold.it/150x100" alt="Логотип &ldquohtmlacademy&rdquo"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="Логотип &ldquohtmlacademy&rdquo"></a>
     </p>
 
   </footer>
