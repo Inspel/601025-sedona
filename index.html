@@ -86,10 +86,32 @@
         <button>Поиск гостиницы в Седоне</button>
 
         <form class="search-form" action="index.html" method="post">
-
+          <div class="form-group">
+            <label for="in">Дата заезда:</label>
+            <input class="date" type="text" id="in" name="in" value="24 апреля 2017">
+            <button>Кнопка-календарь</button>
+          </div>
+          <div class="form-group">
+            <label for="out">Дата выезда:</label>
+            <input class="date" type="text" id="out" name="out" value="4 июля 2017">
+            <button>Кнопка-календарь</button>
+          </div>
+          <div class="form-group adults">
+            <span>Взрослые</span>
+            <button>Минус</button>
+            <output>2</output>
+            <button>Плюс</button>
+          </div>
+          <div class="form-group kids">
+            <span>Дети</span>
+            <button>Минус</button>
+            <output>0</output>
+            <button>Плюс</button>
+          </div>
+          <button>Найти</button>
 
         </form>
-       <!--Здесь место для формы-->
+
       </section>
 
       <section class="map">
@@ -113,7 +135,7 @@
 
       <p class="footer-copyright">
         <span>Website by</span>
-        <a href="#"><img src="http://placehold.it/150x100" alt="Логотип &ldquohtmlacademy&rdquo"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="Логотип &ldquohtmlacademy&rdquo"></a>
       </p>
 
     </footer>
