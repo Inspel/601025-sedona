@@ -9,12 +9,14 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
-      </a>
       <ul class="site-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">фото и видео</a></li>
+        <li>
+          <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
+          </a>
+        </li>
         <li><a href="#">карта штата</a></li>
         <li><a href="hotels.html">гостинницы</a></li>
       </ul>
@@ -28,17 +30,19 @@
       <h2 class="visually-hidden">Интерфейс выбора гостиницы</h2>
 
       <form class="filter-form" action="hotels.html" method="post">
-        <ul class="infrastructure">
-          <li>
-            <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
-          </li>
-          <li>
-            <label><input class="checkbox" type="checkbox" title="parking">Парковка</label>
-          </li>
-          <li>
-            <label><input class="checkbox" type="checkbox" title="wi-fi">Wi-Fi</label>
-          </li>
-        </ul>
+        <fieldset>
+          <ul class="infrastructure">
+            <li>
+              <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
+            </li>
+            <li>
+              <label><input class="checkbox" type="checkbox" title="parking">Парковка</label>
+            </li>
+            <li>
+              <label><input class="checkbox" type="checkbox" title="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
         <ul class="habitat-type">
           <li>
             <label><input class="checkbox" type="checkbox" title="inn">Гостиница</label>
@@ -50,6 +54,7 @@
             <label><input class="checkbox" type="checkbox" title="apartment">Апартаменты</label>
           </li>
         </ul>
+
         <div class="price">
           <p>Стоимость в сутки (р):</p>
           <div class="slider">
@@ -155,14 +160,14 @@
   <footer class="main-footer">
 
     <p class="hashtag">
-      <a href="#"><b>#VISITSEDONA</b></a>
+      <a href="#">#VISITSEDONA</a>
     </p>
 
-    <div class="footer-social">
-      <a class="social-button" href="#">twitter</a>
-      <a class="social-button" href="#">facebook</a>
-      <a class="social-button" href="#">youtube</a>
-    </div>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">twitter</a></li>
+      <li><a class="social-button" href="#">facebook</a></li>
+      <li><a class="social-button" href="#">youtube</a></li>
+    </ul>
 
     <p class="footer-copyright">
       <span>Website by</span>

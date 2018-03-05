@@ -8,19 +8,21 @@
 
   <body>
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="#">
-          <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостинницы</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="#">информация</a></li>
+        <li><a href="#">фото и видео</a></li>
+        <li>
+          <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
+          </a>
+        </li>
+        <li><a href="#">карта штата</a></li>
+        <li><a href="hotels.html">гостинницы</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="container">
       <h1 class="visually-hidden">Отпуск в Седоне</h1>
@@ -33,8 +35,8 @@
       <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
 
       <section class="reasons-and-features">
-          <h2 class="visually-hidden">Почему Седона</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="visually-hidden">Почему Седона</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="reasons">
           <li class="reason">
             <h3>Настоящий городок</h3>
@@ -47,9 +49,9 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="reason">
-              <h3>Небольшая площадь</h3>
-              <p>— №3 —</p>
-              <p>Все достопримечательности находятся очень близко</p>
+            <h3>Небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="reason">
             <h3>Красивая дорога</h3>
@@ -62,7 +64,7 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="reason features">
-             <ul class="features-list">
+            <ul class="features-list">
               <li class="feature-item">
                 <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -97,19 +99,18 @@
             <button>Кнопка-календарь</button>
           </div>
           <div class="form-group adults">
-            <span>Взрослые</span>
-            <button>Минус</button>
+            <label for="quantity">Взрослые</label>
+            <input  id="quantity" value="Минус">
             <output>2</output>
-            <button>Плюс</button>
+            <input id="quantity" value="Плюс">
           </div>
           <div class="form-group kids">
-            <span>Дети</span>
-            <button>Минус</button>
+            <label for="quantity">Дети</label>
+            <input  id="quantity" value="Минус">
             <output>0</output>
-            <button>Плюс</button>
+            <input id="quantity" value="Плюс">
           </div>
-          <button>Найти</button>
-
+          <input type="submit" value="Найти">
         </form>
 
       </section>
@@ -124,14 +125,14 @@
     <footer class="main-footer">
 
       <p class="hashtag">
-        <a href="#"><b>#VISITSEDONA</b></a>
+        <a href="#">#VISITSEDONA</a>
       </p>
 
-      <div class="footer-social">
-        <a class="social-button" href="#">twitter</a>
-        <a class="social-button" href="#">facebook</a>
-        <a class="social-button" href="#">youtube</a>
-      </div>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">twitter</a></li>
+        <li><a class="social-button" href="#">facebook</a></li>
+        <li><a class="social-button" href="#">youtube</a></li>
+      </ul>
 
       <p class="footer-copyright">
         <span>Website by</span>
