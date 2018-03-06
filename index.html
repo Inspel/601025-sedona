@@ -13,14 +13,10 @@
       <ul class="site-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">фото и видео</a></li>
-        <li>
-          <a class="main-header-logo" href="index.html">
-            <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
-          </a>
-        </li>
         <li><a href="#">карта штата</a></li>
         <li><a href="hotels.html">гостинницы</a></li>
       </ul>
+      <img class="logo" src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
     </nav>
   </header>
 
@@ -99,16 +95,16 @@
             <button>Кнопка-календарь</button>
           </div>
           <div class="form-group adults">
-            <label for="quantity">Взрослые</label>
-            <input  id="quantity" value="Минус">
-            <output>2</output>
-            <input id="quantity" value="Плюс">
+            <label for="adults">Взрослые</label>
+            <button class="minus">-</button>
+            <input class="quantity" id="adults" type="text" value="2">
+            <button class="plus">+</button>
           </div>
           <div class="form-group kids">
-            <label for="quantity">Дети</label>
-            <input  id="quantity" value="Минус">
-            <output>0</output>
-            <input id="quantity" value="Плюс">
+            <label for="kids">Дети</label>
+            <button class="minus">-</button>
+            <input class="quantity" id="kids" type="text" value="0">
+            <button class="plus">+</button>
           </div>
           <input type="submit" value="Найти">
         </form>

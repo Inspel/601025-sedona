@@ -12,14 +12,12 @@
       <ul class="site-navigation">
         <li><a href="#">информация</a></li>
         <li><a href="#">фото и видео</a></li>
-        <li>
-          <a class="main-header-logo" href="index.html">
-            <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
-          </a>
-        </li>
         <li><a href="#">карта штата</a></li>
         <li><a href="hotels.html">гостинницы</a></li>
       </ul>
+      <a class="main-header-logo" href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип проекта &ldquoСедона&rdquo">
+      </a>
     </nav>
   </header>
 
@@ -31,41 +29,46 @@
 
       <form class="filter-form" action="hotels.html" method="post">
         <fieldset>
-          <ul class="infrastructure">
+          <legend>Инфраструктура</legend>
+            <ul class="infrastructure">
+              <li>
+                <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
+              </li>
+              <li>
+                <label><input class="checkbox" type="checkbox" title="parking">Парковка</label>
+              </li>
+              <li>
+                <label><input class="checkbox" type="checkbox" title="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <ul class="habitat-type">
             <li>
-              <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
+              <label><input class="checkbox" type="checkbox" title="inn">Гостиница</label>
             </li>
             <li>
-              <label><input class="checkbox" type="checkbox" title="parking">Парковка</label>
+              <label><input class="checkbox" type="checkbox" title="motel">Мотель</label>
             </li>
             <li>
-              <label><input class="checkbox" type="checkbox" title="wi-fi">Wi-Fi</label>
+              <label><input class="checkbox" type="checkbox" title="apartment">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <ul class="habitat-type">
-          <li>
-            <label><input class="checkbox" type="checkbox" title="inn">Гостиница</label>
-          </li>
-          <li>
-            <label><input class="checkbox" type="checkbox" title="motel">Мотель</label>
-          </li>
-          <li>
-            <label><input class="checkbox" type="checkbox" title="apartment">Апартаменты</label>
-          </li>
-        </ul>
 
         <div class="price">
-          <p>Стоимость в сутки (р):</p>
-          <div class="slider">
-            <span>от</span>
-            <input class="from" value="от 0">
-            <span>до</span>
-            <input class="before" value="3000">
-          </div>
-          <button>Показать</button>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="slider">
+              <label for="from">от</label>
+              <input class="from" id="from" value="от 0">
+              <label for="to">до</label>
+              <input class="to" id="to" value="3000">
+            </div>
+            <button>Показать</button>
+          </fieldset>
         </div>
-
       </form>
     </section>
 
@@ -79,8 +82,8 @@
           <li><a class="sort-method">По типу</a></li>
           <li><a class="sort-method">По рейтингу</a></li>
         </ul>
-        <button class="sort-lowest">По возрастанию</button>
-        <button class="sort-highest">По убыванию</button>
+        <a class="sort-lowest">По возрастанию</a>
+        <a class="sort-highest">По убыванию</a>
       </div>
 
       <ul class="inns-list">
