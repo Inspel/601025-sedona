@@ -41,7 +41,8 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -79,7 +80,7 @@ a {
   color: #000000;
 
 }
-.reasons-and-features p {
+.reasons-and-features .introduction {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -89,46 +90,50 @@ a {
   list-style: none;
 }
 
-.reason h3 {
+.reason-important .first {
+  background-image: url("../img/reason-first.jpg");
+  background-repeat: no-repeat;
+}
+
+.reason-important .second {
+  background-image: url("../img/reason-second.jpg");
+  background-repeat: no-repeat;
+}
+
+.reason-important-header {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   color: #eeeeee;
 }
 
-.reason p {
+ .reason-important-text {
   font-size: 14px;
   line-height: 21px;
   color: #eeeeee;
-
 }
 
-.reason .text {
+.reason-important .block {
   background-color: #81b3d2;
   width: 400px;
   height: 256px;
 }
 
-.reason:nth-child(1) {
-  background-image: url("../img/reason-first.jpg");
-  background-repeat: no-repeat;
- }
-
-.reason:nth-child(2) {
-  background-image: url("../img/reason-second.jpg");
-  background-repeat: no-repeat;
-  }
-
-.last {
+.reason-other {
   background-color: #eeeeee;
 }
-.last h3,
-.features h3 {
+.reason-other-header,
+.feature-item-header {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
   color: #000000;
 }
 
-.last p,
-.features p {
+.reason-other-text,
+.feature-item-text {
+  font-size: 14px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -136,14 +141,14 @@ a {
   list-style: none;
 }
 
-.search h2 {
+.search-header {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
   color: #000000;
 }
 
-.search p {
+.search-instruction {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -157,7 +162,8 @@ a {
   background-color:#766357;
 }
 
-.search .button-find:hover {
+.search .button-find:hover,
+.search .button-find:focus {
   background-color: #604e43;
 }
 
@@ -196,7 +202,8 @@ a {
   background-color: #81b3d2;
 }
 
-.search-form input[type="submit"]:hover {
+.search-form input[type="submit"]:hover,
+.search-form input[type="submit"]:focus {
   background-color: #669ec0;
 }
 
@@ -207,7 +214,7 @@ a {
 
 /*Стили для футера*/
 
-.hashtag a {
+.hashtag .hashtag-link {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -218,7 +225,7 @@ a {
   list-style: none;
 }
 
-.footer-copyright span{
+.footer-copyright .copyright-text {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -245,8 +252,13 @@ a {
   border: none;
 }
 
-.filter-form ul {
+.filter-form .infrastructure,
+.filter-form .habitat-type {
   list-style: none;
+}
+
+.filter-form label {
+  color: #ffffff;
 }
 
 .price input {
@@ -256,7 +268,7 @@ a {
   background: transparent;
 }
 
-.price button {
+.price .button-show {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
@@ -264,15 +276,21 @@ a {
   background: transparent;
 }
 
-.hotels p {
+.price .button-show:hover,
+.price .button-show:focus {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.hotels .quantity {
   font-size: 21px;
   font-weight: bold;
   line-height: 25px;
   color: #000000;
 }
 
-.hotels-sort p,
-.hotels-sort li {
+.hotels-sort .sort-header,
+.hotels-sort .sort-item {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
@@ -289,7 +307,8 @@ a {
   text-decoration-color: #81b3d2;
 }
 
-.hotels-sort .sort-method:hover {
+.hotels-sort .sort-method:hover,
+.hotels-sort .sort-method:focus {
   color: #81b3d2;
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -309,7 +328,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels-sort-buttons .sort-button:hover {
+.hotels-sort-buttons .sort-button:hover,
+.hotels-sort-buttons .sort-button:focus {
   color: #000000;
 }
 
@@ -332,7 +352,8 @@ a {
   color: #000000;
 }
 
-.hotels-list-item .hotel:hover {
+.hotels-list-item .hotel:hover,
+.hotels-list-item .hotel:focus {
   color: #81b3d2;
 }
 
@@ -340,7 +361,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels-list-item p {
+.hotels-list-item .hotel-type,
+.hotels-list-item .hotel-price {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -356,7 +378,8 @@ a {
   color: #ffffff;
 }
 
-.hotel-info:hover {
+.hotel-info:hover,
+.hotel-info:focus {
   background-color: #669ec0;
 }
 
@@ -370,7 +393,8 @@ a {
   color: #ffffff;
 }
 
-.hotel-booking:hover {
+.hotel-booking:hover,
+.hotel-booking:focus {
   background-color: #604e43;
 }
 
@@ -380,13 +404,10 @@ a {
 }
 
 .hotel-rating-numbers {
-  background-color: #f2f2f2;
-}
-
-.hotel-rating-numbers p {
   font-size: 14px;
   line-height: 21px;
   color: #666666;
+  background-color: #f2f2f2;
 }
 
 
