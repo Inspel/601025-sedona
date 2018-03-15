@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Седона: отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
         <li><a href="#">информация</a></li>
         <li><a href="#">фото и видео</a></li>
         <li><a href="#">карта штата</a></li>
-        <li><a href="hotels.html">гостинницы</a></li>
+        <li><a class="active-page" href="hotels.html">гостинницы</a></li>
       </ul>
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="138" height="70"  alt="Логотип проекта &ldquoСедона&rdquo">
@@ -24,7 +26,7 @@
   <main class="container">
     <h1 class="visually-hidden">Выбор гостиницы</h1>
 
-    <section class="inns-search">
+    <section class="hotels-search">
       <h2 class="visually-hidden">Интерфейс выбора гостиницы</h2>
 
       <form class="filter-form" action="hotels.html" method="post">
@@ -75,30 +77,36 @@
 
     <section class="hotels">
       <h2 class="visually-hidden">Подходящие гостиницы</h2>
+      <p>Найдено:<span>3</span></p>
       <div class="hotels-sort">
-        <p>Найдено:<span>3</span></p>
         <p>Сортировка:</p>
+        <ul>
+          <li>
+            <a class="sort-method price" href="#">По цене</a>
+          </li>
+          <li>
+            <a class="sort-method type" href="#">По типу</a>
+          </li>
+          <li>
+            <a class="sort-method rating" href="#">По рейтингу</a>
+          </li>
+        </ul>
         <ul class="hotels-sort-buttons">
-          <li><a class="sort-method" href="#">По цене</a></li>
-          <li><a class="sort-method" href="#">По типу</a></li>
-          <li><a class="sort-method" href="#">По рейтингу</a></li>
+          <li><a class="sort-button lowest" href="#">По возрастанию</a></li>
+          <li><a class="sort-button highest" href="#">По убыванию</a></li>
         </ul>
-        <ul class="inns-sort-buttons lowest-highest">
-          <li><a class="sort-method lowest" href="#">По возрастанию</a></li>
-          <li><a class="sort-method highest" href="#">По убыванию</a></li>
-        </ul>
-      </div>
+       </div>
 
       <ul class="hotels-list">
 
         <li class="hotels-list-item">
-          <h3>Amara resort & spa</h3>
+          <a class="hotel" href="#"><h3>Amara resort & spa</h3></a>
           <div class="hotel-image">
             <img src="img/hotel-amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
           </div>
           <p class="hotel-type">Гостиница</p>
           <p class="hotel-price">от 4000р.</p>
-          <div class="hotel-buttons">
+          <div class="hotel-list-buttons">
             <a class="hotel-info" href="#">Подробнее</a>
             <a class="hotel-booking" href="#">Забронировать</a>
           </div>
@@ -114,13 +122,13 @@
         </li>
 
         <li class="hotels-list-item">
-          <h3>Desert quail inn</h3>
+          <a class="hotel" href="#"><h3>Desert quail inn</h3></a>
           <div class="hotel-image">
             <img src="img/hotel-desert-quail-inn.jpg" width="135" height="90" alt="Desert quail inn">
           </div>
           <p class="hotel-type">Мотель</p>
           <p class="hotel-price">ОТ 3000р.</p>
-          <div class="hotel-buttons">
+          <div class="hotel-list-buttons">
             <a class="hotel-info" href="#">Подробнее</a>
             <a class="hotel-booking" href="#">Забронировать</a>
           </div>
@@ -136,15 +144,15 @@
         </li>
 
         <li class="hotels-list-item">
-          <h3>Villas at Poco diablo</h3>
+          <a class="hotel" href="#"><h3>Villas at Poco diablo</h3></a>
           <div class="hotel-image">
             <img src="img/hotel-villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco diablo">
           </div>
           <p class="hotel-type">Гостиница</p>
           <p class="hotel-price">от 2000р.</p>
-          <div class="hotel-buttons">
-            <a class="hotel-button-info" href="#">Подробнее</a>
-            <a class="hotel-button-booking" href="#">Забронировать</a>
+          <div class="hotel-list-buttons">
+            <a class="hotel-info" href="#">Подробнее</a>
+            <a class="hotel-booking" href="#">Забронировать</a>
           </div>
           <div class="hotel-rating">
             <div class="hotel-stars">
