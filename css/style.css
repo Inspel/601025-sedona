@@ -6,7 +6,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
@@ -24,9 +24,17 @@ a {
   text-decoration: none;
 }
 
+.main-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
 /*Стили для навигации*/
 
 .main-navigation {
+  padding-left: 6%;
+  padding-right: 6%;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -34,7 +42,27 @@ a {
   }
 
 .site-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
   list-style: none;
+  justify-content: space-between;
+}
+
+.menu-element {
+  width: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.menu-element:nth-child(odd) {
+
+}
+
+
+
+.menu-element:nth-child(2) {
+  margin-right: 235px;
 }
 
 .site-navigation a {
@@ -52,6 +80,10 @@ a {
 
 .site-navigation .active-page {
   color: #766357;
+}
+
+.logo {
+  display: none;
 }
 
 /*Стили для index.html*/
