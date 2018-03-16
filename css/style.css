@@ -33,8 +33,6 @@ a {
 /*Стили для навигации*/
 
 .main-navigation {
-  padding-left: 6%;
-  padding-right: 6%;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -43,26 +41,39 @@ a {
 
 .site-navigation {
   display: flex;
-  padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: flex-start;
   list-style: none;
-  justify-content: space-between;
 }
 
 .menu-element {
-  width: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  width: 241px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
-.menu-element:nth-child(odd) {
+.site-navigation .info {
+  text-align: left;
+}
+
+.site-navigation .media {
+  text-align: left;
+  margin-right: 90px;
+}
+
+.site-navigation .state-map {
+  text-align: right;
+  margin-right: 2px;
 
 }
 
-
-
-.menu-element:nth-child(2) {
-  margin-right: 235px;
+.site-navigation .hotels {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -83,7 +94,10 @@ a {
 }
 
 .logo {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 882px;
+  z-index: 1;
 }
 
 /*Стили для index.html*/
@@ -154,6 +168,7 @@ a {
 .reason-other {
   background-color: #eeeeee;
 }
+
 .reason-other-header,
 .feature-item-header {
   font-size: 21px;
