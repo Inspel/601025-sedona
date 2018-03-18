@@ -31,38 +31,38 @@
       <section class="hotels-search">
         <h2 class="visually-hidden">Интерфейс выбора гостиницы</h2>
 
-        <form class="filter-form" action="hotels.html" method="post">
-          <fieldset>
+        <form class="filter-form clearfix" action="hotels.html" method="post">
+          <fieldset class="infrastructure">
             <legend>Инфраструктура</legend>
-              <ul class="infrastructure">
-                <li>
+              <ul class="infrastructure-list">
+                <li class="search-list-item">
                   <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
                 </li>
-                <li>
+                <li class="search-list-item">
                   <label><input class="checkbox" type="checkbox" title="parking">Парковка</label>
                 </li>
-                <li>
+                <li class="search-list-item">
                   <label><input class="checkbox" type="checkbox" title="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="habitat">
             <legend>Тип жилья</legend>
-            <ul class="habitat-type">
-              <li>
+            <ul class="habitat-list">
+              <li class="search-list-item">
                 <label><input class="checkbox" type="checkbox" title="inn">Гостиница</label>
               </li>
-              <li>
+              <li class="search-list-item">
                 <label><input class="checkbox" type="checkbox" title="motel">Мотель</label>
               </li>
-              <li>
+              <li class="search-list-item">
                 <label><input class="checkbox" type="checkbox" title="apartment">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <div class="price">
-            <fieldset>
+
+            <fieldset class="price">
               <legend>Стоимость в сутки (р):</legend>
               <div class="slider">
                 <label for="from">от</label>
@@ -73,31 +73,37 @@
               <button class="button-show" type="submit">Показать</button>
             </fieldset>
 
-          </div>
+
         </form>
       </section>
 
       <section class="hotels">
         <h2 class="visually-hidden">Подходящие гостиницы</h2>
-        <p class="quantity">Найдено:<span>3</span></p>
-        <div class="hotels-sort">
-          <p class="sort-header">Сортировка:</p>
-          <ul>
-            <li class="sort-item">
-              <a class="sort-method price" href="#">По цене</a>
-            </li>
-            <li class="sort-item">
-              <a class="sort-method type" href="#">По типу</a>
-            </li>
-            <li class="sort-item">
-              <a class="sort-method rating" href="#">По рейтингу</a>
-            </li>
-          </ul>
-          <ul class="hotels-sort-buttons">
-            <li><a class="sort-button lowest" href="#">По возрастанию</a></li>
-            <li><a class="sort-button highest" href="#">По убыванию</a></li>
-          </ul>
-         </div>
+
+        <div class="sort-wrapper">
+          <div class="quantity-wrapper">
+            <p class="quantity">Найдено: <span>3</span></p>
+          </div>
+          <div class="hotels-sort">
+            <p class="sort-header">Сортировка:</p>
+            <ul class="sort-list">
+              <li class="sort-item">
+                <a class="sort-method price" href="#">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-method type" href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-method rating" href="#">По рейтингу</a>
+              </li>
+            </ul>
+            <ul class="hotels-sort-buttons">
+              <li><a class="sort-button lowest" href="#">По возрастанию</a></li>
+              <li><a class="sort-button highest" href="#">По убыванию</a></li>
+            </ul>
+          </div>
+        </div>
+
 
         <ul class="hotels-list">
 
