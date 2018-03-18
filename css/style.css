@@ -36,6 +36,7 @@ a {
 /*Стили для навигации*/
 
 .main-navigation {
+  position: relative;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -50,12 +51,12 @@ a {
   padding-right: 6%;
   padding-top: 0;
   padding-bottom: 0;
-  justify-content: flex-start;
+  justify-content: space-between;
   list-style: none;
 }
 
 .menu-element {
-  width: 241px;
+  width: 20%;
   padding-top: 14px;
   padding-bottom: 16px;
 }
@@ -65,14 +66,12 @@ a {
 }
 
 .site-navigation .media {
+  margin-right: 11%;
   text-align: left;
-  margin-right: 90px;
 }
 
 .site-navigation .state-map {
   text-align: right;
-  margin-right: 2px;
-
 }
 
 .site-navigation .hotels {
@@ -99,7 +98,8 @@ a {
 .logo {
   position: absolute;
   top: 0;
-  left: 882px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -127,26 +127,64 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 
 }
-.reasons-and-features .introduction {
+
+.introduction-wrapper {
+  margin:auto;
+}
+
+.introduction {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
+  text-align: center;
 }
 
 .reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.reason-important .first {
+.reason-important {
+  width: 100%;
+ }
+
+.first {
   background-image: url("../img/reason-first.jpg");
   background-repeat: no-repeat;
+  background-position: right;
 }
 
-.reason-important .second {
+.second {
+  order: 3;
   background-image: url("../img/reason-second.jpg");
   background-repeat: no-repeat;
+  background-position: left;
+}
+
+.reason-important .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  padding-top: 50px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.first .block {
+  float: left;
+}
+
+.second .block {
+  float: right;
 }
 
 .reason-important-header {
@@ -156,20 +194,40 @@ a {
   color: #eeeeee;
 }
 
- .reason-important-text {
+.reason-important-text {
   font-size: 14px;
   line-height: 21px;
   color: #eeeeee;
 }
-
-.reason-important .block {
-  background-color: #81b3d2;
-  width: 400px;
-  height: 256px;
+.features {
+  order: 2;
 }
 
-.reason-other {
+.features-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-item {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.reasons-other {
+  order: 4;
   background-color: #eeeeee;
+}
+
+.reasons-other-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.other-list-element {
+  width: calc(100% / 3);
+  text-align: center;
 }
 
 .reason-other-header,
@@ -187,21 +245,19 @@ a {
   color: #333333;
 }
 
-.features-list {
-  list-style: none;
-}
-
 .search-header {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
   color: #000000;
+  text-align: center;
 }
 
 .search-instruction {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+  text-align: center;
 }
 
 .search .button-find {
@@ -264,6 +320,19 @@ a {
 
 /*Стили для футера*/
 
+.main-footer {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
 .hashtag .hashtag-link {
   font-size: 21px;
   font-weight: bold;
@@ -272,6 +341,7 @@ a {
 }
 
 .footer-social {
+  padding: 0;
   list-style: none;
 }
 
