@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -45,6 +50,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 6%;
@@ -142,6 +148,7 @@ a {
 
 .reasons {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
@@ -168,6 +175,7 @@ a {
 
 .reason-important .block {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -219,6 +227,7 @@ a {
 
 .reasons-other-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
@@ -320,6 +329,7 @@ a {
 
 .main-footer {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 6%;
