@@ -24,11 +24,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .main-wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -111,8 +106,14 @@ img {
 
 .intro {
   position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 76px;
+  padding-bottom: 80px;
+  margin-bottom: 60px;
   background-image: url("../img/bg-photo.jpg");
   background-repeat: no-repeat;
+  background-position: 0 -56px;
 }
 
 .intro:after {
@@ -127,19 +128,18 @@ img {
 }
 
 .slogan {
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
   text-align: center;
-
-}
-
-.introduction-wrapper {
-  margin:auto;
 }
 
 .introduction {
+  margin: 0;
+  margin-bottom: 51px;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -352,20 +352,39 @@ img {
   background-color: #5496bd;
 }
 
+.map {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.map img {
+  display: block;
+}
+
 /*Стили для футера*/
 
 .main-footer {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 6%;
-  padding-right: 6%;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 36px;
   list-style: none;
 }
 
-.hashtag .hashtag-link {
+.main-footer .container {
+  box-sizing: border-box;
+  width: 33.333333%;
+}
+
+.hashtag {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hashtag-link {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -373,14 +392,53 @@ img {
 }
 
 .footer-social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   padding: 0;
+  padding-top: 1px;
+  padding-right: 1px;
   list-style: none;
 }
 
-.footer-copyright .copyright-text {
+.footer-social li {
+  margin-right: 6px;
+}
+
+.social-button   {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.footer-social li:nth-last-child {
+  margin-right: 0;
+}
+
+.footer-social li:nth-child(1) {
+  padding-left: 6px;
+}
+
+.footer-copyright {
+  display: flex;
+  padding-left: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-text {
+  padding-right: 9px;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+}
+
+.copyright-logo {
+  width: 115px;
+  height: 40px;
 }
 
 /*Стили для hotels.html*/
