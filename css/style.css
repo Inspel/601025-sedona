@@ -41,7 +41,7 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-  }
+}
 
 .site-navigation {
   display: flex;
@@ -678,17 +678,17 @@ a {
   display: inline-block;
 }
 
-.info {
+.about {
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.info:hover,
-.info:focus {
+.about:hover,
+.about:focus {
   background-color: #669ec0;
 }
 
-.info:active {
+.about:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
