@@ -31,9 +31,9 @@
       <section class="hotels-search">
         <h2 class="visually-hidden">Интерфейс выбора гостиницы</h2>
 
-        <form class="filter-form clearfix" action="hotels.html" method="post">
-          <fieldset class="infrastructure">
-            <legend>Инфраструктура</legend>
+        <form class="filter-form" action="hotels.html" method="post">
+          <fieldset class="filter-block infrastructure">
+            <legend>Инфраструктура:</legend>
               <ul class="infrastructure-list">
                 <li class="search-list-item">
                   <label><input class="checkbox" type="checkbox" title="pool">Бассейн</label>
@@ -46,8 +46,8 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="habitat">
-            <legend>Тип жилья</legend>
+          <fieldset class="filter-block habitat">
+            <legend>Тип жилья:</legend>
             <ul class="habitat-list">
               <li class="search-list-item">
                 <label><input class="checkbox" type="checkbox" title="inn">Гостиница</label>
@@ -62,16 +62,16 @@
           </fieldset>
 
 
-            <fieldset class="price">
-              <legend>Стоимость в сутки (р):</legend>
+          <fieldset class="filter-block price">
+            <legend>Стоимость в сутки (р):</legend>
               <div class="slider">
                 <label for="from">от</label>
                 <input class="from" id="from" value="от 0">
                 <label for="to">до</label>
                 <input class="to" id="to" value="3000">
               </div>
-              <button class="button-show" type="submit">Показать</button>
-            </fieldset>
+            <button class="button-show" type="submit">Показать</button>
+          </fieldset>
 
 
         </form>
@@ -113,11 +113,13 @@
             </div>
             <div class="hotel-wrapper">
               <a class="hotel" href="#"><h3>Amara resort & spa</h3></a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">от 4000р.</p>
+              <div class="hotel-text">
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-price">от 4000р.</p>
+              </div>
               <div class="hotel-list-buttons">
-                <a class="hotel-info" href="#">Подробнее</a>
-                <a class="hotel-booking" href="#">Забронировать</a>
+                <a class="hotel-button info" href="#">Подробнее</a>
+                <a class="hotel-button booking" href="#">Забронировать</a>
               </div>
             </div>
 
@@ -138,11 +140,13 @@
             </div>
             <div class="hotel-wrapper">
               <a class="hotel" href="#"><h3>Desert quail inn</h3></a>
-              <p class="hotel-type">Мотель</p>
-              <p class="hotel-price">ОТ 3000р.</p>
+              <div class="hotel-text">
+                <p class="hotel-type">Мотель</p>
+                <p class="hotel-price">ОТ 3000р.</p>
+              </div>
               <div class="hotel-list-buttons">
-                <a class="hotel-info" href="#">Подробнее</a>
-                <a class="hotel-booking" href="#">Забронировать</a>
+                <a class="hotel-button info" href="#">Подробнее</a>
+                <a class="hotel-button booking" href="#">Забронировать</a>
               </div>
             </div>
 
@@ -163,11 +167,13 @@
             </div>
             <div class="hotel-wrapper">
               <a class="hotel" href="#"><h3>Villas at Poco diablo</h3></a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">от 2000р.</p>
+              <div class="hotel-text">
+                <p class="hotel-type">Гостиница</p>
+                <p class="hotel-price">от 2000р.</p>
+              </div>
               <div class="hotel-list-buttons">
-                <a class="hotel-info" href="#">Подробнее</a>
-                <a class="hotel-booking" href="#">Забронировать</a>
+                <a class="hotel-button info" href="#">Подробнее</a>
+                <a class="hotel-button booking" href="#">Забронировать</a>
               </div>
             </div>
 

@@ -157,38 +157,45 @@ img {
 }
 
 .reason-important {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: right;
- }
-
-.reason-town {
-  background-image: url("../img/reason-first.jpg");
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
 .reason-bridge {
   order: 3;
-  background-image: url("../img/reason-second.jpg");
 }
-
 .reason-important .block {
   display: flex;
-  flex-wrap: wrap;
+  width: 33.333333%;
+  height: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100% / 3);
   padding-top: 50px;
   text-align: center;
   background-color: #81b3d2;
 }
 
-.reason-image-revert {
-  background-position: left;
+.reason-image {
+  width: 66.666666%;
+  position: relative;
+  overflow: hidden;
 }
 
-.reason-image-revert .block {
-  float: right;
+.reason-image img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.reason-image-revert {
+  flex-direction: row-reverse;
 }
 
 .reason-important-header {
@@ -203,6 +210,7 @@ img {
   line-height: 21px;
   color: #eeeeee;
 }
+
 .features {
   order: 2;
 }
@@ -250,6 +258,10 @@ img {
   color: #333333;
 }
 
+.search {
+  position: relative;
+}
+
 .search-wrapper {
   display: flex;
   flex-direction: column;
@@ -272,11 +284,14 @@ img {
 }
 
 .search .button-find {
+  width: 568px;
+  align-self: center;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #ffffff;
   background-color:#766357;
+  border: none;
 }
 
 .search .button-find:hover,
@@ -287,6 +302,14 @@ img {
 .search .button-find:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+
+.search-form {
+  width: 568px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eeeeee;
 }
 
 .search-form label,
@@ -370,19 +393,14 @@ img {
   background-image: url("../img/bg-photo.jpg");
   background-repeat: no-repeat;
   background-position: 0px -200px;
-
 }
 
 .filter-form {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 21px;
   color: #eeeeee;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .filter-form legend {
@@ -395,23 +413,11 @@ img {
   display: none;
 }
 
-.infrastructure {
-  float: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 122px;
-  padding: 0;
-  border: none;
-}
-
-.habitat {
-  float: left;
+.filter-block {
   margin: 0;
   padding: 0;
   border: none;
 }
-
 .infrastructure legend {
   padding: 0;
   margin-bottom: 25px;
@@ -446,10 +452,9 @@ img {
 }
 
 .price {
-  float: right;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: 0;
   padding: 0;
   border: none;
@@ -565,8 +570,6 @@ img {
 }
 
 .hotels-list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -577,6 +580,10 @@ img {
   padding-left: 6%;
   padding-right: 6%;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-wrapper {
+  flex-grow: 1;
 }
 
 .hotel {
@@ -601,6 +608,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  vertical-align: middle;
 }
 
 .hotel-list-buttons {
@@ -608,32 +616,36 @@ img {
   font-weight: bold;
 }
 
-.hotel-info {
+.hotel-button {
+  display: inline-block;
+}
+
+.info {
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.hotel-info:hover,
-.hotel-info:focus {
+.info:hover,
+.info:focus {
   background-color: #669ec0;
 }
 
-.hotel-info:active {
+.info:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-.hotel-booking {
+.booking {
   background-color: #766357;
   color: #ffffff;
 }
 
-.hotel-booking:hover,
-.hotel-booking:focus {
+.booking:hover,
+.booking:focus {
   background-color: #604e43;
 }
 
-.hotel-booking:active {
+.booking:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #604e43;
 }
@@ -641,7 +653,6 @@ img {
 .hotel-rating {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
 }
 
 .hotel-stars {
