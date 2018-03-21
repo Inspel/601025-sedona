@@ -45,6 +45,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 6%;
@@ -134,6 +135,11 @@ a {
   line-height: 26px;
   color: #000000;
   text-align: center;
+
+}
+
+.introduction-wrapper {
+  margin:auto;
 }
 
 .introduction {
@@ -147,6 +153,7 @@ a {
 
 .reasons {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
@@ -171,6 +178,7 @@ a {
 
 .reason-important .block {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -222,6 +230,7 @@ a {
 
 .reasons-other-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
