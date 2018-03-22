@@ -381,6 +381,7 @@ a {
 .hashtag {
   padding: 0;
   margin: 0;
+  margin-bottom: 3px;
   text-align: center;
 }
 
@@ -405,13 +406,60 @@ a {
   margin-right: 6px;
 }
 
-.social-button   {
+.social-button {
+  box-sizing: border-box;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 46px;
-  height: 48px;
+  height: 47px;
   background-color: #81b3d2;
+}
+
+.twitter:before {
+  content: "";
+  width: 46px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-social-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+  background-size: 18px 17px;
+}
+
+.facebook:before {
+  content: "";
+  width: 46px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-social-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
+}
+
+.youtube:before {
+  content: "";
+  width: 46px;
+  height: 47px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-social-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 15px;
+  background-size: 20px 17px;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active:before {
+  opacity: 0.3;
 }
 
 .footer-social li:nth-last-child {
@@ -425,6 +473,7 @@ a {
 .footer-copyright {
   display: flex;
   padding-left: 3px;
+  margin-bottom: 3px;
   justify-content: center;
   align-items: center;
 }
@@ -436,9 +485,18 @@ a {
   color: #000000;
 }
 
-.copyright-logo {
+.copyright-link {
   width: 115px;
   height: 40px;
+}
+
+.copyright-logo:hover path,
+.copyright-logo:focus path {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active path {
+  fill: #bdbbbc;
 }
 
 /*Стили для hotels.html*/
@@ -562,12 +620,14 @@ a {
 .hotels-sort {
   display: flex;
   padding-top: 36px;
+  flex-grow: 1;
 }
 
 .sort-list {
   display: flex;
   margin: 0;
   padding-left: 0;
+  flex-grow: 1;
   list-style: none;
  }
 
@@ -597,6 +657,7 @@ a {
   color:  #000000;
   text-decoration: none;
 }
+
 
 .hotels-sort .price {
   color:  #81b3d2;
@@ -676,6 +737,7 @@ a {
 
 .hotel-button {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .about {
