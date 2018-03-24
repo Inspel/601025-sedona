@@ -62,33 +62,33 @@
               </div>
             <li class="reasons-other">
               <ul class="reasons-other-list">
-                <li class="other-list-element">
+                <li class="other-list-element other-square">
                   <h3 class="reason-other-header">Небольшая площадь</h3>
-                  <p class="reason-other-text">— №3 —</p>
+                  <p class="reason-other-number">— №3 —</p>
                   <p class="reason-other-text">Все достопримечательности находятся очень близко</p>
                 </li>
-                <li class="other-list-element">
+                <li class="other-list-element other-road">
                   <h3 class="reason-other-header">Красивая дорога</h3>
-                  <p class="reason-other-text">— №4 —</p>
+                  <p class="reason-other-number">— №4 —</p>
                   <p class="reason-other-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
-                <li class="other-list-element">
+                <li class="other-list-element other-tourists">
                   <h3 class="reason-other-header">Мало туристов</h3>
-                  <p class="reason-other-text">— №5 —</p>
+                  <p class="reason-other-number">— №5 —</p>
                   <p class="reason-other-text">Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
               </ul>
             <li class="features">
               <ul class="features-list">
-                <li class="feature-item">
+                <li class="feature-item feature-habitat">
                   <h3 class="feature-item-header">Жилье</h3>
                   <p class="feature-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="feature-item">
+                <li class="feature-item feature-food">
                   <h3 class="feature-item-header">Еда</h3>
                   <p class="feature-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="feature-item">
+                <li class="feature-item feature-souvenirs">
                   <h3 class="feature-item-header">Сувениры</h3>
                   <p class="feature-item-text">Не только китайского, но и местного производства!</p>
                 </li>
@@ -101,33 +101,55 @@
           <div class="search-wrapper">
             <h2 class="search-header">Заинтересовались?</h2>
             <p class="search-instruction">Укажите предполгаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button-find">Поиск гостиницы в Седоне</button>
+            <button class="modal-button">Поиск гостиницы в Седоне</button>
           </div>
 
           <form class="search-form" action="index.html" method="post">
-            <div class="form-group">
+            <div class="form-group date-in">
               <label for="in">Дата заезда:</label>
-              <input class="date" type="text" id="in" name="in" value="24 апреля 2017">
-              <button>Кнопка-календарь</button>
+              <input class="date-input" type="text" id="in" name="in" value="24 апреля 2017">
+              <button class="button-calendar">
+                <svg class="calendar-img" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
             </div>
-            <div class="form-group">
+            <div class="form-group date-out">
               <label for="out">Дата выезда:</label>
-              <input class="date" type="text" id="out" name="out" value="4 июля 2017">
-              <button>Кнопка-календарь</button>
+              <input class="date-input" type="text" id="out" name="out" value="4 июля 2017">
+              <button class="button-calendar">
+                <svg class="calendar-img" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
             </div>
-            <div class="form-group adults">
-              <label for="adults">Взрослые</label>
-              <button class="minus">-</button>
-              <input class="quantity" id="adults" type="text" value="2">
-              <button class="plus">+</button>
+            <div class="form-group quantity">
+              <div class="quantity-block adults">
+
+                <label for="adults">Взрослые:</label>
+                <div class="quantity-input-wrapper">
+                  <button class="minus">
+                    <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
+                  </button>
+                  <input class="quantity-input" id="adults" type="text" value="2">
+                  <button class="plus">
+                    <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
+                </button>
+                </div>
+
+              </div>
+
+              <div class="quantity-block kids">
+                <label for="kids">Дети:</label>
+                <div class="quantity-input-wrapper">
+                  <button class="minus">
+                    <span class="visually-hidden">Кнопка уменьшения количества детей</span>
+                  </button>
+                  <input class="quantity-input" id="kids" type="text" value="0">
+                  <button class="plus">
+                    <span class="visually-hidden">Кнопка увеличения количества детей</span>
+                  </button>
+                </div>
+              </div>
+
             </div>
-            <div class="form-group kids">
-              <label for="kids">Дети</label>
-              <button class="minus">-</button>
-              <input class="quantity" id="kids" type="text" value="0">
-              <button class="plus">+</button>
-            </div>
-            <input type="submit" value="Найти">
+            <input class="search-button" type="submit" value="Найти">
           </form>
 
         </section>
