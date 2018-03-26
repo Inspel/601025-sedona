@@ -20,11 +20,30 @@ body {
   overflow: hidden;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
 
 .main-wrapper {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: white;
@@ -415,6 +434,7 @@ a {
   box-sizing: border-box;
   width: 568px;
   position: absolute;
+  z-index: 1;
   left: 50%;
   transform: translateX(-50%);
   padding: 55px;
@@ -630,34 +650,35 @@ a {
 .map {
   width: 100%;
   height: 100%;
-  margin-bottom: -120px;
 }
 
 .map img {
   display: block;
-  z-index: 0;
 }
 
 /*Стили для футера*/
 
 .main-footer {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  z-index: 1;
   padding-top: 36px;
   padding-bottom: 36px;
   list-style: none;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
 }
 
+.footer-absolute {
+  position: absolute;
+  width: inherit;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+}
 
 .main-footer .container {
   box-sizing: border-box;
   width: 33.333333%;
-
 }
 
 .hashtag {
@@ -783,13 +804,15 @@ a {
 /*Стили для hotels.html*/
 
 .hotels-search {
+  position: relative;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 27px;
-  padding-bottom: 7px;
-  background-image: url("../img/bg-photo.jpg");
+  padding-bottom: 6px;
+  overflow: hidden;
+  background-image: url("../img/bg-filter-photo.jpg");
   background-repeat: no-repeat;
-  background-position: 0px -200px;
+  background-position: 0 -294px;
 }
 
 .filter-form {
@@ -806,15 +829,16 @@ a {
   line-height: 21px;
 }
 
-.checkbox {
-  display: none;
-}
-
 .filter-block {
   margin: 0;
   padding: 0;
   border: none;
 }
+
+.infrastructure {
+  margin-right: 118px;
+}
+
 .infrastructure legend {
   padding: 0;
   margin-bottom: 25px;
@@ -845,8 +869,52 @@ a {
 }
 
 .filter-form label {
+  position: relative;
   color: #ffffff;
 }
+
+.filter-form label:hover {
+  cursor: pointer;
+}
+
+.checkbox + label:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.checkbox:checked + label:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.checkbox:disabled + label:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-disabled.svg");
+  background-repeat: no-repeat;
+}
+
 
 .price {
   margin-top: 0;
