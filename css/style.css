@@ -882,7 +882,6 @@ a {
   position: absolute;
   left: -40px;
   top: -2px;
-
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -895,7 +894,6 @@ a {
   position: absolute;
   left: -40px;
   top: -2px;
-
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -908,15 +906,15 @@ a {
   position: absolute;
   left: -40px;
   top: -2px;
-
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-disabled.svg");
   background-repeat: no-repeat;
 }
 
-
 .price {
+  width: 318px;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -925,23 +923,124 @@ a {
   border: none;
 }
 
-.price input {
+.price legend {
+  margin: 0;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .from {
+  width: 90px;
+  margin-bottom: 0px;
+  padding-left: 65px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+
+}
+
+.price-controls .to {
+  width: 90px;
+  margin-bottom: 0px;
+  padding-left: 57px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #eeeeee;
   background: transparent;
+  border: none;
 }
 
-.price .button-show {
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-from {
+  left: 0;
+}
+
+.range-toggle-to {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.button-show {
+  display: block;
+  margin: 0 85px;
+  padding: 6px 30px;
   font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
   text-transform: uppercase;
-  line-height: 21px;
-  color: #eeeeee;
   background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
 }
 
-.price .button-show:hover,
-.price .button-show:focus {
+.button-show:hover,
+.button-show:focus {
   color: #000000;
   background-color: #eeeeee;
 }
@@ -950,12 +1049,13 @@ a {
   display: flex;
   padding-left: 6%;
   padding-right: 6%;
+  padding-bottom: 30px;
+  padding-top: 30px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .founded-hotels-wrapper {
   margin-right: 48px;
-  padding-top: 29px;
 }
 
 .founded-hotels {
@@ -969,7 +1069,6 @@ a {
 .hotels-sort {
   display: flex;
   justify-content: flex-start;
-  padding-top: 35px;
   flex-grow: 1;
 }
 
@@ -983,8 +1082,10 @@ a {
 
 .sort-header,
 .sort-item {
+  align-self: flex-end;
   margin: 0;
   font-size: 12px;
+  vertical-align: bottom;
   line-height: 18px;
   color: #000000;
 }
@@ -1016,7 +1117,6 @@ a {
   text-decoration: none;
 }
 
-
 .hotels-sort .price {
   color:  #81b3d2;
   text-decoration: none;
@@ -1024,26 +1124,37 @@ a {
 
 .hotels-sort-buttons {
   display: flex;
+  align-items: flex-end;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   list-style: none;
 }
 
-.hotels-sort-buttons .sort-button {
-  color: rgba(0, 0, 0, 0.3);
+.hotels-sort-buttons li {
+  display: inline-block;
+  vertical-align: top;
 }
 
-.hotels-sort-buttons .sort-button:hover,
-.hotels-sort-buttons .sort-button:focus {
-  color: #000000;
+.hotels-sort-buttons li:nth-child(1) {
+  margin-right: 13px;
+  vertical-align: bottom;
 }
 
-.hotels-sort-buttons .sort-button:active {
-  color:  #81b3d2;
+.sort-button svg {
+  fill: #cacaca;
 }
 
-.hotels-sort-buttons .highest {
-  color:  #81b3d2;
+.sort-button:hover svg,
+.sort-button:focus svg {
+  fill: #000000;
+}
+
+.sort-button:active svg {
+  fill:  #81b3d2;
+}
+
+.active-sort-button svg {
+  fill:  #81b3d2;
 }
 
 .hotels-list {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Седона: отели</title>
@@ -17,7 +17,7 @@
           <li class="menu-element info"><a href="#">информация</a></li>
           <li class="menu-element media"><a href="#">фото и видео</a></li>
           <li class="menu-element state-map"><a href="#">карта штата</a></li>
-          <li class="menu-element hotels"><a href="hotels.html">гостиницы</a></li>
+          <li class="menu-element hotels"><a class="active-page" href="hotels.html">гостиницы</a></li>
         </ul>
         <a class="link-main" href="index.html">
           <img class="logo" src="img/logo.png" width="138" height="70" alt="Логотип проекта &ldquoСедона&rdquo">
@@ -76,15 +76,19 @@
 
           <fieldset class="filter-block price">
             <legend>Стоимость в сутки (р):</legend>
-              <div class="slider">
-                <label for="from">от</label>
-                <input class="from" id="from" value="от 0">
-                <label for="to">до</label>
-                <input class="to" id="to" value="3000">
+            <div class="price-controls">
+              <label class="from">от <input type="text" name="min-price" value="0"></label>
+              <label class="to">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-from"></div>
+              <div class="range-toggle range-toggle-to"></div>
+            </div>
             <button class="button-show" type="submit">Показать</button>
           </fieldset>
-
 
         </form>
       </section>
@@ -110,8 +114,22 @@
               </li>
             </ul>
             <ul class="hotels-sort-buttons">
-              <li><a class="sort-button lowest" href="#">По возрастанию</a></li>
-              <li><a class="sort-button highest" href="#">По убыванию</a></li>
+              <li>
+                <a class="sort-button lowest" href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="sort-button highest active-sort-button" href="#">
+                  <span class="visually-hidden">По убыванию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
