@@ -1028,8 +1028,13 @@ a {
 
 .button-show {
   display: block;
-  margin: 0 85px;
-  padding: 6px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 85px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 31px;
+  padding-right: 30px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -1070,6 +1075,7 @@ a {
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
+  margin-bottom: 2px;
 }
 
 .sort-list {
@@ -1170,46 +1176,75 @@ a {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.hotel-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.hotel-image img {
+  display: block;
+}
+
 .hotel-wrapper {
   flex-grow: 1;
 }
 
-.hotel {
+.hotels-list-item h3 {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 7px;
+}
+
+.hotel-name {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
 }
 
-.hotel:hover,
-.hotel:focus {
+.hotel-name:hover,
+.hotel-name:focus {
   color: #81b3d2;
 }
 
-.hotel:active {
+.hotel-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-text {
+  display: flex;
+  padding-bottom: 14px;
 }
 
 .hotel-type,
 .hotel-price {
-  display: inline-block;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  vertical-align: middle;
+ }
+
+.hotel-type {
+  width: 110px;
+  margin-right: 6px;
 }
 
 .hotel-list-buttons {
+  display: flex;
+}
+
+.hotel-button {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
   font-size: 14px;
   font-weight: bold;
 }
 
-.hotel-button {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .about {
+  width: 110px;
+  margin-right: 6px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -1225,6 +1260,7 @@ a {
 }
 
 .booking {
+  width: 142px;
   background-color: #766357;
   color: #ffffff;
 }
@@ -1242,13 +1278,27 @@ a {
 .hotel-rating {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 .hotel-stars {
   display: flex;
+  justify-content: flex-end;
+}
+
+.star {
+  margin-left: 6px;
 }
 
 .hotel-rating-numbers {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   font-size: 14px;
   line-height: 21px;
   color: #666666;
