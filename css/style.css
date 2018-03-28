@@ -110,8 +110,8 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation .page-link:hover,
+.site-navigation .page-link:focus {
   color: #81b3d2;
 }
 
@@ -483,11 +483,10 @@ a {
 }
 
 .search-form {
-  position: relative;
+  position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 568px;
-  position: absolute;
   z-index: 1;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -522,19 +521,15 @@ a {
 
 .button-calendar {
   position: absolute;
-  right: 9px;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  height: 22px;
+  margin: auto;
   padding: 0;
   background: none;
   border: none;
   opacity: 0.3;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .button-calendar {
-    right: 18px;
-    top: 6.5px;
-
-  }
 }
 
 .button-calendar:hover,
@@ -568,7 +563,7 @@ a {
 }
 
 .date-input {
-  width: 346px;
+  flex-grow: 1;
   padding-left: 12px;
   padding-right: 33px;
   padding-top: 5px;
@@ -1031,6 +1026,11 @@ input[type=text]::-ms-clear {
   background-repeat: no-repeat;
 }
 
+.checkbox:focus + label {
+  outline: 1px dotted #212121;
+  outline: 5px auto white;
+}
+
 .price {
   width: 318px;
   text-transform: uppercase;
@@ -1106,6 +1106,12 @@ input[type=text]::-ms-clear {
   background: transparent;
   border: none;
 }
+
+.price-controls input:focus {
+  outline: 1px dotted #212121;
+  outline: 5px auto white;
+}
+
 
 .range-controls {
   position: relative;
