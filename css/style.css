@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans","Arial", "sans-serif";
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -480,6 +480,7 @@ a {
 .search-form label,
 .date-input,
 .quantity-input {
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -693,6 +694,15 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+}
+
+.hashtag-link:hover,
+.hashtag-link:focus {
+  color: #81b3d2;
+}
+
+.hashtag-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .footer-social {
@@ -940,7 +950,7 @@ a {
   border-radius: 3px;
 }
 
-.price-controls::after {
+.price-controls:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1190,7 +1200,7 @@ a {
   flex-grow: 1;
 }
 
-.hotels-list-item h3 {
+.hotel-wrapper h3 {
   margin: 0;
   padding-top: 25px;
   padding-bottom: 7px;
