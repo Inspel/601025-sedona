@@ -179,6 +179,11 @@ a {
   text-align: center;
 }
 
+.reasons-and-features {
+  position: relative;
+  z-index: 2;
+}
+
 .reasons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,9 +419,11 @@ a {
 
 .search {
   position: relative;
+  z-index: 1;
 }
 
 .search-wrapper {
+  position: relative;
   padding-top: 49px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +435,8 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  z-index: 2;
+  background-color: white;
 }
 
 .search-header {
@@ -468,30 +477,37 @@ a {
   cursor: pointer;
 }
 
-.search .button-find:hover,
-.search .button-find:focus {
+.modal-button:hover,
+.modal-button:focus {
   background-color: #604e43;
 }
 
-.search .button-find:active {
+ .modal-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
 .search-form {
+  display: block;
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 568px;
-  z-index: 1;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   padding: 55px;
+  z-index: 1;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 15px 6px rgba(0, 1, 1, 0.10);
   box-shadow: 0px 0px 15px 6px rgba(0, 1, 1, 0.10);
+  transition: 0.5s;
+}
+
+.toggle-off {
+  transform: translate(-50%, -100%);
+  transition: 0.5s;
 }
 
 .date-in {
@@ -724,11 +740,20 @@ input[type=text]::-ms-clear {
 /*Стили раздела карты в index.html*/
 
 .map {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
+.map iframe {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  border: 0;
+}
+
 .map img {
+  z-index: -1;
   display: block;
 }
 
@@ -914,7 +939,6 @@ input[type=text]::-ms-clear {
   padding-right: 6%;
   padding-top: 27px;
   padding-bottom: 6px;
-  overflow: hidden;
   background-image: url("../img/bg-filter-photo.jpg");
   background-repeat: no-repeat;
   background-position: 0 -294px;
