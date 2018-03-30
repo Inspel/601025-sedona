@@ -129,6 +129,11 @@ a {
   z-index: 1;
 }
 
+.link-main:focus img {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 /*Стили для index.html*/
 
 .intro {
@@ -145,6 +150,7 @@ a {
   background-image: url("../img/bg-photo.jpg");
   background-repeat: no-repeat;
   background-position: 0 -56px;
+  background-color: #99b7cc;
 }
 
 .intro:after {
@@ -228,6 +234,8 @@ a {
   position: relative;
   overflow: hidden;
   font-size: 0px;
+  background-color: #8f746d;
+;
 }
 
 .reason-image img {
@@ -256,7 +264,7 @@ a {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .reason-important-number {
@@ -265,7 +273,7 @@ a {
   padding-bottom: 21px;
   font-size: 14px;
   line-height: 21px;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .reason-important-text {
@@ -273,7 +281,7 @@ a {
   padding: 0;
   font-size: 14px;
   line-height: 21px;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .reason-town .reason-important-text {
@@ -566,6 +574,10 @@ a {
   color: #000000;
 }
 
+.search-form label {
+  width: 112px;
+}
+
 .date-input,
 .quantity-input {
   -webkit-box-sizing: border-box;
@@ -744,6 +756,7 @@ input[type=text]::-ms-clear {
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: #f2f1ef;
 }
 
 .map iframe {
@@ -1329,6 +1342,15 @@ input[type=text]::-ms-clear {
 }
 
 .active-sort-button svg {
+  fill:  #81b3d2;
+}
+
+.active-sort-button:hover svg,
+.active-sort-button:focus svg {
+  fill: #81b3d2;
+}
+
+.active-sort-button:active svg {
   fill:  #81b3d2;
 }
 
