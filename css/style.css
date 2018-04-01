@@ -162,6 +162,7 @@ a {
   left: 0;
   background-image: url("../img/intro-shape.png");
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .slogan {
@@ -747,7 +748,24 @@ a {
 input[type=text]::-ms-clear {
   display: none;
   width: 0;
-  height: 0; }
+  height: 0;
+}
+
+@keyframes shake {
+  0%, 100% {
+  translateX(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-51%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-49%);
+  }
+}
+
+.search-form-error {
+  animation: shake 0.5s
+}
 
 /*Стили раздела карты в index.html*/
 
@@ -766,7 +784,6 @@ input[type=text]::-ms-clear {
 }
 
 .map img {
-  z-index: -1;
   display: block;
 }
 
@@ -865,6 +882,7 @@ input[type=text]::-ms-clear {
   background-repeat: no-repeat;
   background-position: 15px 15px;
   background-size: 18px 17px;
+  background-color: #81b3d2;
 }
 
 .facebook:before {
@@ -877,6 +895,7 @@ input[type=text]::-ms-clear {
   background-image: url("../img/icon-social-fb.svg");
   background-repeat: no-repeat;
   background-position: 16px 12px;
+  background-color: #81b3d2;
 }
 
 .youtube:before {
@@ -890,6 +909,7 @@ input[type=text]::-ms-clear {
   background-repeat: no-repeat;
   background-position: 13px 15px;
   background-size: 20px 17px;
+  background-color: #81b3d2;
 }
 
 .social-button:hover,
@@ -955,6 +975,7 @@ input[type=text]::-ms-clear {
   background-image: url("../img/bg-filter-photo.jpg");
   background-repeat: no-repeat;
   background-position: 0 -294px;
+  background-color: #62696f;
 }
 
 .filter-form {
