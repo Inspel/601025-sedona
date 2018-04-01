@@ -882,8 +882,7 @@ input[type=text]::-ms-clear {
   background-repeat: no-repeat;
   background-position: 15px 15px;
   background-size: 18px 17px;
-  background-color: #81b3d2;
-}
+ }
 
 .facebook:before {
   content: "";
@@ -895,7 +894,6 @@ input[type=text]::-ms-clear {
   background-image: url("../img/icon-social-fb.svg");
   background-repeat: no-repeat;
   background-position: 16px 12px;
-  background-color: #81b3d2;
 }
 
 .youtube:before {
@@ -909,12 +907,15 @@ input[type=text]::-ms-clear {
   background-repeat: no-repeat;
   background-position: 13px 15px;
   background-size: 20px 17px;
-  background-color: #81b3d2;
 }
 
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
 }
 
 .social-button:active:before {
