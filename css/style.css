@@ -490,7 +490,7 @@ a {
   background-color: #604e43;
 }
 
- .modal-button:active {
+.modal-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -882,7 +882,7 @@ input[type=text]::-ms-clear {
   background-repeat: no-repeat;
   background-position: 15px 15px;
   background-size: 18px 17px;
- }
+}
 
 .facebook:before {
   content: "";
