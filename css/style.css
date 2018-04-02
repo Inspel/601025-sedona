@@ -152,7 +152,6 @@ a {
   background-color: #99b7cc;
 }
 
-
 .intro:after {
   content: "";
   position: absolute;
@@ -162,7 +161,6 @@ a {
   left: 0;
   background-image: url("../img/intro-shape.png");
   background-repeat: no-repeat;
-  background-color: #ffffff;
 }
 
 .slogan {
@@ -397,8 +395,8 @@ a {
   padding: 0;
   padding-top: 47px;
   padding-bottom: 24px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 130px;
+  padding-right: 130px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -459,7 +457,7 @@ a {
 
 .search-instruction {
   margin: 0;
-  padding-bottom: 48px;
+  padding-bottom: 47px;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -471,7 +469,7 @@ a {
   margin: 0;
   padding: 0px;
   padding-top: 30px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -479,6 +477,7 @@ a {
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
+  letter-spacing: -1.7px;
   color: #ffffff;
   background-color:#766357;
   border: none;
@@ -728,6 +727,7 @@ a {
   background-color: #000000;
   outline: none;
 }
+
 .minus:active:after,
 .plus:active:before,
 .plus:active:after {
@@ -753,7 +753,7 @@ input[type=text]::-ms-clear {
 
 @keyframes shake {
   0%, 100% {
-  translateX(-50%);
+    transform:translateX(-50%);
   }
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-51%);
@@ -764,7 +764,7 @@ input[type=text]::-ms-clear {
 }
 
 .search-form-error {
-  animation: shake 0.5s
+  animation: shake 0.5s;
 }
 
 /*Стили раздела карты в index.html*/
@@ -859,6 +859,10 @@ input[type=text]::-ms-clear {
   margin-right: 6px;
 }
 
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
 .social-button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -920,14 +924,6 @@ input[type=text]::-ms-clear {
 
 .social-button:active:before {
   opacity: 0.3;
-}
-
-.footer-social li:nth-last-child {
-  margin-right: 0;
-}
-
-.footer-social li:nth-child(1) {
-  padding-left: 6px;
 }
 
 .footer-copyright {
@@ -1166,7 +1162,6 @@ input[type=text]::-ms-clear {
   outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
-
 
 .range-controls {
   position: relative;
@@ -1537,19 +1532,3 @@ input[type=text]::-ms-clear {
   color: #666666;
   background-color: #f2f2f2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
